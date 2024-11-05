@@ -22,7 +22,7 @@
 
         /* Header with Name, Photo, and Summary */
         header {
-            background-color: #f4cccc; /* Soft rose pink */
+            background-color: #e5a6a6; /* Dark rose pink */
             color: #333;
             padding: 40px 20px;
             text-align: center;
@@ -30,7 +30,6 @@
 
         header img {
             width: 150px;
-            border-radius: 50%;
             margin-top: 10px;
         }
 
@@ -99,7 +98,7 @@
 
         /* Link Styling */
         a {
-            color: #d98695; /* Rose color for links */
+            color: #A94D54; /* Rose color for links */
             text-decoration: none;
         }
 
@@ -120,7 +119,19 @@
 <header>
     <h1>Alejandra Martinez</h1>
      <img src="photo_amc (1).png" alt="Photo of Your Name" style="width: 150px;"> <!-- No border-radius applied -->
-    <p> Welcome! Iam a research fellow at the University of Nottingham. I am affiliated to the Centre of Inclusive Trade Policy (CITP). </p>
+   <style>
+    .split-line {
+        display: inline-block; /* Allows line splitting with margins */
+        margin-bottom: 5px; /* Space between the lines */
+    }
+</style>
+
+<p>
+    <span class="split-line">Welcome! Iam a research fellow at the University of Nottingham.</span>
+    <span class="split-line">I am affiliated to the Centre of Inclusive Trade Policy (CITP).</span>
+</p>
+    
+
 </header>
 
 <!-- Navigation Bar -->
