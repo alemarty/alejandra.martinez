@@ -3,74 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alejandra Martinez</title>
+    <title>Alejandra Martinez - Personal Website</title>
+
+    <!-- Link to Google Fonts for EB Garamond -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
+        /* Apply EB Garamond to the entire page and set up basic styling */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f9;
+            font-family: 'EB Garamond', serif;
+            font-size: 18px;
+            line-height: 1.6;
             color: #333;
             margin: 0;
             padding: 0;
+            background-color: #faf3f3; /* Light rose background */
         }
+
+        /* Header with Name, Photo, and Summary */
         header {
-            padding: 50px;
-            background-color: #333;
-            color: #fff;
+            background-color: #f4cccc; /* Soft rose pink */
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
         }
+
+        header img {
+            width: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
         header h1 {
             font-size: 2.5em;
+            font-weight: 700;
+            margin: 10px 0;
+            color: #333;
         }
-        .content {
-            padding: 20px;
+
+        header p {
+            font-size: 1.2em;
+            color: #555;
         }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ffd966; /* Soft mustard yellow */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d9a05b; /* Slightly darker mustard for hover */
+        }
+
+        /* Section Styling */
         .section {
-            margin: 20px auto;
+            padding: 40px;
             max-width: 800px;
+            margin: 0 auto;
         }
+
         .section h2 {
-            color: #0073e6;
+            color: #d98695; /* Darker rose for headings */
+            font-size: 2em;
+            font-weight: 700;
+            border-bottom: 2px solid #ffd966; /* Mustard accent */
+            padding-bottom: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
         }
+
+        .research-item h3 {
+            color: #d98695; /* Rose for subheadings */
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        /* Footer Styling */
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #d98695; /* Dark rose for footer */
+            color: white;
             padding: 20px;
-            font-size: 0.8em;
+            text-align: center;
+            font-size: 0.9em;
         }
+
+        /* Link Styling */
         a {
-            color: #0073e6;
+            color: #d98695; /* Rose color for links */
             text-decoration: none;
         }
+
         a:hover {
-            text-decoration: underline;
+            color: #b76672; /* Slightly darker rose for hover */
+        }
+
+        /* Unordered List Styling */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Alejandra Martinez</h1>
-        <img src="photo_amc(1).png" alt="" style="width:150px; border-radius:50%;">
-        <p>Hello!  I am research felllow at the University of Nottingham. I hold a PhD in economics from the University of Warwick. My research focuses on international trade, and explores the nature of buyer-seller relationships in the global marketplace.</p>
-    </header>
 
-    <!-- Main Content -->
-    <div class="content">
-        <!-- Research -->
-        <div class="section">
-            <h2>Research</h2>
-            <p>Working papers</p>
-       
-        </div>
+<!-- Header with Name, Photo, and Summary -->
+<header>
+    <h1>Your Name</h1>
+    <img src="photo_amc (1).png" alt="Alejandra">
+    <p>I work as a research fellow at the University of Nottingham. I am affiliated to the Centre of Inclusive Trade Policy (CITP). </p>
+</header>
 
-        <!-- Contact Section -->
-        <div class="section">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me on  <a href="mailto:alejandra.martinez@nottingham.ac.uk">email me</a>!</p>
-        </div>
+<!-- Navigation Bar -->
+<nav>
+    <a href="#research">Research</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+    <a href="#code-data">Code & Data</a>
+</nav>
+
+<!-- Research Section -->
+<div id="research" class="section">
+    <h2>Research</h2>
+    <div class="research-item">
+        <h3>Working Papers</h3>
+        <p><strong><a href="https://warwick.ac.uk/fac/soc/economics/staff/amartinezcubillos/JPM_ALEJANDRA.pdf">Trade relationships during and after a crisis</a></strong><br>I study the impact of an extreme weather event on international trade relationships. Exploiting variation in Colombian flower exporters' access to cargo terminals during an unprecedented La Niña season in 2010-11 when some roads became impassable, I find that exporter-importer relationships exposed to road disruptions became 7 percentage points less likely to end during the road disruptions. These results are driven by importers that can hedge against non-deliveries by relying on current relationships. A firm-level exposure measure shows that relationships linked to importers who cannot rely on other current relationships for sourcing are more likely to end. I present a theoretical framework that rationalises the decision to keep or replace a relationship based on (1) the relative cost of establishing a new trade relationship; and (2) firm profits affected by other exposed relationships. The findings shed light on the dynamics of international buyer-seller relationships in the context of extreme weather events.</p>
+        <p><strong><a href="link">Transitivity in trade</a></strong><br>A large literature on social networks has shown that individuals are more likely to be connected with each other if they share connections with other individuals. We take this idea to trade between firms. Firms are more likely to trade with each other if they share common trading partners, and forming a new connection makes trade with other partners more likely. We provide a statistically based characterisation of transitivity in trade transactions that is applicable to any model of trade where the formation of agent-to-agent links involves a stochastic component (e.g., arising from random search or random matching), and we discuss how transitivity can be measured in transactions data. We apply this methodology to firm-level Colombia-US exporter-importer data.</p>
     </div>
 
-    <!-- Footer Section -->
+    <div class="research-item">
+        <h3>Work in Progress</h3>
+        <p><strong>Insights from firm-to-firm transaction data</a></strong></p>
+    </div>
+
+</div>
+
+<!-- CV Section -->
+<div id="cv" class="section">
+    <h2>CV</h2>
+    <p>You can view or download my CV here:</p>
+    <a href="CV_amc.pdf" download>Download CV</a>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="alejandra.martinez@nottingham.ac.uk">alejandra.martinez@nottingham.ac.uk</a></p>
+    <p>Affiliations: Centre of Inclusive Trade Policy </p>
+</div>
+
+<!-- Code & Data Section -->
+<div id="code-data" class="section">
+    <h2>Code & Data</h2>
+    <p>Here you can find links to my code and data repositories:</p>
+    <ul>
+       <!-- <li><a href="https://github.com/your-username/repository1">Repository 1</a> - Description of repository 1.</li> -->
+      <!--  <li><a href="https://github.com/your-username/repository2">Repository 2</a> - Description of repository 2.</li> -->
+    </ul>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
     <footer>
         <p>&copy; 2023 [Alejandra Martinez]. All rights reserved.</p>
     </footer>
