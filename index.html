@@ -98,6 +98,61 @@
         .paper-title { font-weight: bold; }
         .paper-meta { color: gray; font-size: 0.95em; }
 
+
+     .paper {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    color: #333333;
+  }
+
+  /* Shared styling for all paper titles */
+  .paper-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+  }
+
+  /* CLICKABLE paper titles (<a> tags) */
+  a.paper-title {
+    color: #0056b3; /* Distinct academic blue */
+    text-decoration: underline;
+    text-decoration-color: #99c2ff;
+    text-underline-offset: 3px;
+    transition: all 0.2s ease;
+  }
+
+  a.paper-title:hover {
+    color: #003d82;
+    background-color: #eef5ff; /* Subtle highlight on hover */
+    text-decoration-color: #003d82;
+  }
+
+  /* NON-CLICKABLE paper titles (<span> tags) */
+  span.paper-title {
+    color: #111111; /* Solid dark text, no underline */
+    text-decoration: none;
+  }
+
+  /* Co-author links */
+  .paper a:not(.paper-title) {
+    color: #444444;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 2px;
+  }
+
+  .paper a:not(.paper-title):hover {
+    color: #0056b3;
+    text-decoration-style: solid;
+  }   
+
+/* Publication / Working Paper details */
+  .paper-meta {
+    font-size: 0.9rem;
+    color: #666666;
+    font-style: italic;
+  }
+
         /* Footer */
         footer {
             background-color: #FFF3E0;
@@ -150,54 +205,37 @@
         <h3>Working Papers and Work in Progress</h3>
 
         
-          <p class="paper">
-            <a class="paper-title" href="https://citp.ac.uk/publications/prices-markups-and-exchange-rates">
-             Prices, Markups and Exchange Rates</a>
-            <br>
-            with <a href="https://profiles.warwick.ac.uk/ecsdaf-natalie-chen">Natalie Chen</a>
-            and <a href="https://sites.google.com/site/lucianajuvenal/home">Luciana Juvenal</a>
-            <br>
-            <span class="paper-meta">CITP Working Paper 046, 2026</span>
-        </p>
+<p class="paper">
+  <a class="paper-title" href="https://citp.ac.uk/publications/prices-markups-and-exchange-rates">Prices, Markups and Exchange Rates</a> <br>
+  with <a href="https://profiles.warwick.ac.uk/ecsdaf-natalie-chen">Natalie Chen</a> and <a href="https://sites.google.com/site/lucianajuvenal/home">Luciana Juvenal</a> <br>
+  <span class="paper-meta">CITP Working Paper 046, 2026</span>
+</p>
 
-        <p class="paper">
-            <a class="paper-title" href="https://www.nottingham.ac.uk/gep/news-events/news/papers/2026/2604.aspx">
-            Trade Relationships During and After a Crisis</a>
-            <br>
-            <span class="paper-meta">GEP Working Paper, 2026</span>
-        </p>
+<p class="paper">
+  <a class="paper-title" href="https://www.nottingham.ac.uk/gep/news-events/news/papers/2026/2604.aspx">Trade Relationships During and After a Crisis</a> <br>
+  <span class="paper-meta">GEP Working Paper, 2026</span>
+</p>
 
-        <p class="paper">
-            <a class="paper-title" href="https://arxiv.org/abs/2512.18893">
-            Transitivity in International Trade: Evidence from Colombia–U.S. Firm Relationships</a>
-            <br>
-            with <a href="https://warwick.ac.uk/fac/soc/economics/staff/cperroni/">Carlo Perroni</a>
-            and <a href="https://profiles.warwick.ac.uk/ecsfak-dennis-novy">Dennis Novy</a>
-            <br>
-            <span class="paper-meta">Working Paper, 2025</span>
-           
-        </p>
+<p class="paper">
+  <a class="paper-title" href="https://arxiv.org/abs/2512.18893">Transitivity in International Trade: Evidence from Colombia–U.S. Firm Relationships</a> <br>
+  with <a href="https://warwick.ac.uk/fac/soc/economics/staff/cperroni/">Carlo Perroni</a> and <a href="https://profiles.warwick.ac.uk/ecsfak-dennis-novy">Dennis Novy</a> <br>
+  <span class="paper-meta">Working Paper, 2025</span>
+</p>
 
+<p class="paper">
+  <a class="paper-title" href="Reassesing_Firm-to-firm_Martinez.pdf">Insights from Firm-to-Firm Transaction Data: Reassessing Buyer-Seller Networks</a> <br>
+  <span class="paper-meta">Working Paper, 2024</span>
+</p>
 
-        <p class="paper">
-            <a class="paper-title" href="Reassesing_Firm-to-firm_Martinez.pdf">
-             Insights from Firm-to-Firm Transaction Data: Reassessing Buyer-Seller Networks</a>
-              <br>
-             <span class="paper-meta">Working Paper, 2024</span>
-        </p>
+<p class="paper">
+  <span class="paper-title">Trade Disfacilitation after Trade Disintegration</span> <br>
+  with <a href="https://sites.google.com/view/alejandrograziano">Alejandro Graziano</a>
+</p>
 
-        <p class="paper">
-            <span class="paper-title">Trade Disfacilitation after Trade Disintegration</span>
-            <br>
-            with <a href="https://sites.google.com/view/alejandrograziano">Alejandro Graziano</a>
-        </p>
-
-        <p class="paper">
-            <span class="paper-title">Transitive Gravity</span>
-            <br>
-            with <a href="https://warwick.ac.uk/fac/soc/economics/staff/cperroni/">Carlo Perroni</a>
-            and <a href="https://profiles.warwick.ac.uk/ecsfak-dennis-novy">Dennis Novy</a>
-        </p>
+<p class="paper">
+  <span class="paper-title">Transitive Gravity</span> <br>
+  with <a href="https://warwick.ac.uk/fac/soc/economics/staff/cperroni/">Carlo Perroni</a> and <a href="https://profiles.warwick.ac.uk/ecsfak-dennis-novy">Dennis Novy</a>
+</p>
    
 
     <div class="research-item">
