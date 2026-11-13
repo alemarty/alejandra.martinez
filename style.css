@@ -1,0 +1,122 @@
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+/* Left sidebar menu */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    background-color: #FFF3E0;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #FFCC80;
+}
+
+.sidebar .site-name {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.sidebar nav a {
+    display: block;
+    padding: 8px 12px;
+    margin-bottom: 4px;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.sidebar nav a:hover { background-color: #FFE0B2; color: #5D4037; }
+.sidebar nav a.active { background-color: #FFCC80; }
+
+/* Main content */
+main {
+    margin-left: 220px;
+    padding: 50px 40px;
+}
+
+.content { max-width: 800px; margin: 0 auto; }
+
+h1 { font-size: 2.5em; font-weight: 700; margin: 0 0 20px; }
+
+.profile { text-align: center; }
+.profile img { width: 200px; height: auto; }
+
+.intro p { font-size: 1.1em; color: #444; line-height: 1.7; margin: 0 0 1em; }
+
+.section { margin-top: 40px; }
+
+.section h2 {
+    font-size: 2em;
+    font-weight: 700;
+    border-bottom: 2px solid #5D4037;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin: 0 0 20px;
+}
+
+h3 { font-size: 1.5em; font-weight: 700; margin: 20px 0 10px; }
+
+/* Paper entries */
+.paper {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    color: #333;
+}
+.paper-title { font-weight: 600; font-size: 1.05rem; }
+a.paper-title {
+    color: #0056b3;
+    text-decoration: underline;
+    text-decoration-color: #99c2ff;
+    text-underline-offset: 3px;
+}
+a.paper-title:hover { color: #003d82; background-color: #eef5ff; text-decoration-color: #003d82; }
+span.paper-title { color: #111; }
+.paper a:not(.paper-title) {
+    color: #444;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 2px;
+}
+.paper a:not(.paper-title):hover { color: #0056b3; text-decoration-style: solid; }
+.paper-meta { font-size: 0.9rem; color: #666; font-style: italic; }
+
+/* Links */
+a { color: #5D4037; text-decoration: none; }
+a:hover { color: #333; }
+
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Phones: menu moves to the top */
+@media (max-width: 700px) {
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 16px;
+        border-right: none;
+        border-bottom: 1px solid #FFCC80;
+    }
+    .sidebar .site-name { margin-bottom: 10px; }
+    .sidebar nav a { display: inline-block; }
+    main { margin-left: 0; padding: 30px 16px; }
+}

@@ -4,298 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandra Martinez - Personal Website</title>
-
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'EB Garamond', serif;
-            font-size: 18px;
-            line-height: 1.6;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            background-color: #FFFFFF;
-        }
-
-        /* Header */
-        header {
-            background-color: #FFF3E0;
-            color: #333;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        header img {
-            width: 200px;
-            height: auto;
-            margin-top: 10px;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-            font-weight: 700;
-            margin: 10px 0;
-            color: #333;
-        }
-
-        .intro {
-            max-width: 720px;
-            margin: 30px auto 0;
-            text-align: left;
-        }
-
-        .intro p {
-            font-size: 1.1em;
-            color: #444;
-            line-height: 1.7;
-            margin: 0 0 1em;
-        }
-
-        .split-line {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        /* Navigation Bar */
-        nav {
-            background-color: #FFCC80;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #333;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #5D4037;
-        }
-
-        /* Sections: one shared centred column */
-        .section {
-            padding: 40px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .section h2 {
-            color: #333;
-            font-size: 2em;
-            font-weight: 700;
-            border-bottom: 2px solid #5D4037;
-            padding-bottom: 5px;
-            display: inline-block;
-            margin: 0 0 20px 0;
-        }
-
-        .research-item h3 {
-            color: #333;
-            font-size: 1.5em;
-            font-weight: 700;
-            margin: 20px 0 10px 0;
-        }
-
-        /* Paper entries */
-        .paper { margin: 0 0 1em 0; line-height: 1.5; }
-        .paper-title { font-weight: bold; }
-        .paper-meta { color: gray; font-size: 0.95em; }
-
-
-     .paper {
-    font-family: system-ui, -apple-system, sans-serif;
-    line-height: 1.5;
-    margin-bottom: 1.25rem;
-    color: #333333;
-  }
-
-  /* Shared styling for all paper titles */
-  .paper-title {
-    font-weight: 600;
-    font-size: 1.05rem;
-  }
-
-  /* CLICKABLE paper titles (<a> tags) */
-  a.paper-title {
-    color: #0056b3; /* Distinct academic blue */
-    text-decoration: underline;
-    text-decoration-color: #99c2ff;
-    text-underline-offset: 3px;
-    transition: all 0.2s ease;
-  }
-
-  a.paper-title:hover {
-    color: #003d82;
-    background-color: #eef5ff; /* Subtle highlight on hover */
-    text-decoration-color: #003d82;
-  }
-
-  /* NON-CLICKABLE paper titles (<span> tags) */
-  span.paper-title {
-    color: #111111; /* Solid dark text, no underline */
-    text-decoration: none;
-  }
-
-  /* Co-author links */
-  .paper a:not(.paper-title) {
-    color: #444444;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 2px;
-  }
-
-  .paper a:not(.paper-title):hover {
-    color: #0056b3;
-    text-decoration-style: solid;
-  }   
-
-/* Publication / Working Paper details */
-  .paper-meta {
-    font-size: 0.9rem;
-    color: #666666;
-    font-style: italic;
-  }
-
-        /* Footer */
-        footer {
-            background-color: #FFF3E0;
-            color: #333;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9em;
-        }
-
-        /* Links */
-        a {
-            color: #5D4037;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #333;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <h1>Alejandra Martinez</h1>
-    <img src="photo_amc (1).png" alt="Photo of Alejandra Martinez">
+<aside class="sidebar">
+    <a class="site-name" href="index.html">Alejandra Martinez</a>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="research.html">Research</a>
+        <a href="policy.html">Policy</a>
+    </nav>
+</aside>
+
+<main>
+<div class="content">
+    <div class="profile">
+        <h1>Alejandra Martinez</h1>
+        <img src="photo_amc (1).png" alt="Photo of Alejandra Martinez">
+    </div>
+
     <div class="intro">
             <p>Hello, and welcome to my website!</p>
             <p>I am an economist affiliated with the <a href="https://citp.ac.uk/">Centre for Inclusive Trade Policy (CITP)</a>. My research focuses on empirical international trade, with an emphasis on firm-to-firm dynamics, production networks and firm heterogeneity. I am also interested in market competition and trade policy interventions.</p>
             <p>I have worked at the University of Nottingham (affiliated with <a href="https://www.nottingham.ac.uk/gep/">GEP</a>), the World Bank, <a href="https://crest.science/">CREST</a> and <a href="https://economia.uniandes.edu.co/cede">CEDE</a>. I received my PhD in Economics from the University of Warwick in 2024, and my MA (2014) and BA (2012) in Economics from Universidad de los Andes.</p>
             <p>Beyond research, I follow global events and occasionally write shorter, non-academic pieces on topics I find interesting.</p>
-        </div>
-</header>
+    </div>
 
-<!-- Navigation Bar -->
-<nav>
-    <a href="#research">Research</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <div id="cv" class="section">
+        <h2>CV</h2>
+        <p><a href="Academic_CV.pdf" download>Download CV</a></p>
+    </div>
 
-<!-- Research Section -->
-<div id="research" class="section">
-    <h2>Research</h2>
-    <div class="research-item">
-        <h3>Working Papers and Work in Progress</h3>
-
-        
-<p class="paper">
-  <a class="paper-title" href="https://citp.ac.uk/publications/prices-markups-and-exchange-rates">Prices, Markups and Exchange Rates</a> <br>
-  with <a href="https://profiles.warwick.ac.uk/ecsdaf-natalie-chen">Natalie Chen</a> and <a href="https://sites.google.com/site/lucianajuvenal/home">Luciana Juvenal</a> <br>
-  <span class="paper-meta">CITP Working Paper 046, 2026</span>
-</p>
-
-<p class="paper">
-  <a class="paper-title" href="https://www.nottingham.ac.uk/gep/news-events/news/papers/2026/2604.aspx">Trade Relationships During and After a Crisis</a> <br>
-  <span class="paper-meta">GEP Working Paper, 2026</span>
-</p>
-
-<p class="paper">
-  <a class="paper-title" href="https://arxiv.org/abs/2512.18893">Transitivity in International Trade: Evidence from Colombia–U.S. Firm Relationships</a> <br>
-  with <a href="https://warwick.ac.uk/fac/soc/economics/staff/cperroni/">Carlo Perroni</a> and <a href="https://profiles.warwick.ac.uk/ecsfak-dennis-novy">Dennis Novy</a> <br>
-  <span class="paper-meta">Working Paper, 2025</span>
-</p>
-
-<p class="paper">
-  <a class="paper-title" href="Reassesing_Firm-to-firm_Martinez.pdf">Insights from Firm-to-Firm Transaction Data: Reassessing Buyer-Seller Networks</a> <br>
-  <span class="paper-meta">Working Paper, 2024</span>
-</p>
-
-<p class="paper">
-  <span class="paper-title">Trade Disfacilitation after Trade Disintegration</span> <br>
-  with <a href="https://sites.google.com/view/alejandrograziano">Alejandro Graziano</a>
-</p>
-
-<p class="paper">
-  <span class="paper-title">Transitive Gravity</span> <br>
-  with <a href="https://warwick.ac.uk/fac/soc/economics/staff/cperroni/">Carlo Perroni</a> and <a href="https://profiles.warwick.ac.uk/ecsfak-dennis-novy">Dennis Novy</a>
-</p>
-   
-
-    <div class="research-item">
-        <h3>Non-academic Publications</h3>
-
-<p class="paper">
-  <a class="paper-title" href="https://citp.ac.uk/publications/running-up-that-hill-the-wtos-battle-with-modern-industrial-policy">Running up that hill: The WTO’s battle with modern industrial policy</a> <br>
-  with Thiemo Fetzer and Tao Zhangue <br>
-  <span class="paper-meta">CITP Briefing Paper 32, 2026</span>
-</p>
-
-<p class="paper">
-  <a class="paper-title" href="https://www.ipp.eu/en/publication/the-spread-of-shocks-through-international-value-chains-the-case-of-the-coronavirus/">Propagations of Shocks in Global Value Chains: The Coronavirus Case</a> <br>
-  with Elie Gershel and Isabelle Mejean <br>
-  <span class="paper-meta">Post-Print halshs-02515354, HAL, 2020</span>
-</p>
-
-<p class="paper">
-  <a class="paper-title" href="https://www.ipp.eu/en/publication/the-cost-of-brexit-related-uncertainty-fewer-customers-for-french-exporters/">The cost of Brexit uncertainty: Missing partners from French exporters</a> <br>
-  with Julien Martin and Isabelle Mejean <br>
-  <span class="paper-meta">Institut des Politiques Publiques halshs-02515757, HAL, 2019</span>
-</p>
-
-        <h3>Newspapers and Media</h3>
-
-        <p class="paper">
-            <a href="https://www.europeanfinancialreview.com/how-global-value-chains-became-victims-of-covid-19/">
-                Elie Gershel, Alejandra Martinez, and Isabelle Mejean, 2020. “How Global Value Chains Became Victims of Covid-19,” The European Financial Review.</a>
-        </p>
-
-</div>
-</div>
-    
-<!-- CV Section -->
-<div id="cv" class="section">
-    <h2>CV</h2>
-    <p><a href="Academic_CV.pdf" download>Download CV</a></p>
-</div>
-
-<!-- Contact Section -->
-<div id="contact" class="section">
-    <h2>Contact</h2>
+    <div id="contact" class="section">
+        <h2>Contact</h2>
     <p>Email: <a href="mailto:aalejanddra26@gmail.com">aalejanddra26@gmail.com</a></p>
     <p>Affiliation: Centre for Inclusive Trade Policy</p>
     <p>Website: <a href="https://citp.ac.uk/people/alejandra-martinez" target="_blank">Link to CITP</a></p>
-</div>
+    </div>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2026 Alejandra Martinez. All rights reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Alejandra Martinez. All rights reserved.</p>
+    </footer>
+</div>
+</main>
 
 </body>
 </html>
-
-
